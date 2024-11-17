@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import UserCard from "../components/UserCard";
+import NavBar from "../components/NavBar";  // Adjust path based on your file structure
 
 function Home() {
   const [users, setUsers] = useState([])
@@ -17,8 +18,8 @@ function Home() {
 
   return (
     <>
-      <header>
-        {/* place NavBar here */}
+       <header>
+        <NavBar />
       </header>
       <main>
         <h1>Home!</h1>
@@ -27,5 +28,4 @@ function Home() {
     </>
   );
 };
-
 export default Home;
